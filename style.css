@@ -120,6 +120,7 @@ body {
 .project-img {
 	border-radius: 12px;
 	max-width: 100%;
+	background-color: white;
 }
 
 .links {
