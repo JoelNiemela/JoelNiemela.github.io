@@ -2,8 +2,8 @@
 	--header-bg: #2a2d32;
 	--hero-bg: #283548;
 	--primary: #4c85e1;
-	--header-fg: #F9FAF8;
-	--header-alt-fg: #E5E7EB;
+	--header-fg: #f9faf8;
+	--header-alt-fg: #e5e7eb;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 .header-wrapper {
 	background-color: var(--header-bg);
 	color: white;
-	padding: 8px 0;
+	padding: 8px 20px;
 }
 
 .header {
@@ -40,7 +40,7 @@ body {
 .hero-wrapper {
 	background-color: var(--hero-bg);
 	color: white;
-	padding: 50px 0 80px 0;
+	padding: 50px 20px 80px 20px;
 }
 
 .hero {
@@ -50,9 +50,12 @@ body {
 	max-width: 960px;
 }
 
-.hero-text,
+.hero-text {
+	flex: 5;
+}
+
 .hero-img {
-	flex: 1;
+	flex: 3;
 }
 
 .hero-text {
@@ -76,10 +79,23 @@ body {
 	align-items: center;
 }
 
+@media only screen and (max-width: 720px) {
+	.hero-img {
+		display: none;
+	}
+}
+
 .projects-wrapper {
 	background-color: white;
 	color: black;
-	padding: 50px 0;
+	padding: 50px 20px;
+}
+
+@media only screen and (max-width: 500px) {
+	.projects-wrapper {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 .projects {
@@ -104,6 +120,18 @@ body {
 	border-radius: 8px;
 }
 
+@media only screen and (max-width: 800px) {
+	.projects-item {
+		padding: 10px 30px 20px 30px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.projects-item {
+		padding: 0px 10px 10px 10px;
+	}
+}
+
 .project-header {
 	text-align: left;
 }
@@ -116,46 +144,16 @@ body {
 
 .links {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 12px;
 	border-radius: 12px;
 	max-width: 100%;
 }
 
-.action-wrapper {
-	padding: 80px 0;
-}
-
-.action-card {
-	display: flex;
-	margin: 0 auto;
-	max-width: 960px;
-	background-color: var(--primary);
-	color: white;
-	padding: 12px 40px;
-	border-radius: 8px;
-}
-
-.action-text {
-	flex: 1;
-}
-
-.action-header {
-	margin-bottom: 4px;
-}
-
-.action-text p {
-	margin-top: 0;
-}
-
-.action-btn {
-	display: flex;
-	align-items: center;
-}
-
 .footer-wrapper {
 	background-color: var(--header-bg);
 	color: white;
-	padding: 6px 0;
+	padding: 6px 20px;
 }
 
 .footer {
@@ -173,6 +171,7 @@ body {
 	font-size: 18px;
 	font-weight: bold;
 	text-decoration: none;
+	white-space: nowrap;
 }
 
 .outline-white {
