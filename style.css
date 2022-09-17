@@ -1,11 +1,9 @@
 :root {
-	--hero-bg: #1F2937;
-	--primary: #3882F6;
+	--header-bg: #2a2d32;
+	--hero-bg: #283548;
+	--primary: #4c85e1;
 	--header-fg: #F9FAF8;
 	--header-alt-fg: #E5E7EB;
-	--info-fg: #1F2937;
-	--quote-bg: #E5E7EB;
-	--quote-fg: #1F2937;
 }
 
 body {
@@ -21,9 +19,9 @@ body {
 }
 
 .header-wrapper {
-	background-color: var(--hero-bg);
+	background-color: var(--header-bg);
 	color: white;
-	padding: 6px 0;
+	padding: 8px 0;
 }
 
 .header {
@@ -31,12 +29,6 @@ body {
 	gap: 10px;
 	margin: 0 auto;
 	max-width: 960px;
-}
-
-.header-logo {
-	font-size: 24px;
-	color: var(--header-fg);
-	text-decoration: none;
 }
 
 .header-link {
@@ -48,7 +40,7 @@ body {
 .hero-wrapper {
 	background-color: var(--hero-bg);
 	color: white;
-	padding: 80px 0;
+	padding: 50px 0 80px 0;
 }
 
 .hero {
@@ -79,7 +71,6 @@ body {
 }
 
 .hero-img {
-	background-color: grey;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -130,30 +121,6 @@ body {
 	max-width: 100%;
 }
 
-.quote-wrapper {
-	background-color: var(--quote-bg);
-	color: black;
-	padding: 50px 0;
-}
-
-.quote {
-	margin: 0 auto;
-	max-width: 960px;
-}
-
-.quote-text {
-	font-style: italic;
-	font-size: 36px;
-	font-weight: 300;
-	color: var(--quote-fg);
-}
-
-.quote-source {
-	text-align: right;
-	font-size: 16px;
-	font-weight: bold;
-}
-
 .action-wrapper {
 	padding: 80px 0;
 }
@@ -186,9 +153,9 @@ body {
 }
 
 .footer-wrapper {
-	background-color: var(--hero-bg);
+	background-color: var(--header-bg);
 	color: white;
-	padding: 8px 0;
+	padding: 6px 0;
 }
 
 .footer {
@@ -210,4 +177,13 @@ body {
 
 .outline-white {
 	border: solid white 2px;
+}
+
+.link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.link:hover {
+	text-decoration: underline;
 }
